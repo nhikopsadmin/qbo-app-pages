@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — STR Dashboard QBO Reader</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+           max-width: 760px; margin: 60px auto; padding: 20px; line-height: 1.65; color: #1f2937; }
+    h1, h2 { color: #1f4e78; }
+    h2 { margin-top: 32px; border-bottom: 1px solid #e5e7eb; padding-bottom: 6px; }
+    .meta { color: #6b7280; font-size: 14px; }
+    a { color: #1f4e78; }
+  </style>
+</head>
+<body>
+  <h1>Privacy Policy</h1>
+  <p class="meta">STR Dashboard — QBO Reader · My STR Books · Effective: May 5, 2026</p>
+
+  <h2>1. About this application</h2>
+  <p>STR Dashboard — QBO Reader (the "Application") is a private, internal-use software tool developed and operated by My STR Books for the purpose of generating financial reporting dashboards for short-term rental property management clients. The Application connects to authorized QuickBooks Online ("QBO") company files exclusively to read accounting data. It is not distributed publicly and is not available for connection by users outside the My STR Books organization.</p>
+
+  <h2>2. Data the Application accesses</h2>
+  <p>When a QBO administrator authorizes the Application against a company file, the Application reads — using read-only API endpoints only — the following categories of data:</p>
+  <ul>
+    <li>Profit &amp; Loss reports (whole-company and by-class)</li>
+    <li>Cash flow reports</li>
+    <li>Chart of accounts metadata</li>
+    <li>Class (property) definitions</li>
+  </ul>
+  <p>The Application does not, and is not authorized to, write, modify, create, or delete any data in connected QBO company files.</p>
+
+  <h2>3. How accessed data is used</h2>
+  <p>Data accessed via the QBO API is used solely for:</p>
+  <ul>
+    <li>Generating internal financial reporting dashboards delivered to the QBO account owner</li>
+    <li>Reconciliation of operational data (e.g. property management bookings) against accounting data</li>
+    <li>Detection of data-quality discrepancies for the benefit of the QBO account owner</li>
+  </ul>
+  <p>Data is not used for advertising, profiling, third-party data sharing, machine learning model training, or any purpose other than the reporting and reconciliation use cases above.</p>
+
+  <h2>4. Data storage and retention</h2>
+  <p>Data accessed from QBO is stored in My STR Books' internal database systems for the duration necessary to support reporting and reconciliation activities. Data is retained for the lifetime of the client relationship plus the period required by applicable bookkeeping standards. Upon termination of the client relationship, retained data is purged within 90 days, except where retention is required by law.</p>
+  <p>OAuth refresh tokens are stored encrypted at rest on the server. Access tokens are short-lived (one hour) and are not persisted beyond their use window.</p>
+
+  <h2>5. Data security</h2>
+  <p>The Application enforces read-only access at multiple layers:</p>
+  <ul>
+    <li>Authentication is performed against a QBO user account with the "Reports Only" role, which is restricted to read-only operations at the QBO platform level.</li>
+    <li>The Application's HTTP client refuses any non-GET request method by design.</li>
+    <li>Access to the Application's infrastructure is limited to authorized My STR Books personnel.</li>
+  </ul>
+
+  <h2>6. Disclosure of data</h2>
+  <p>My STR Books does not sell, rent, or share data accessed from connected QBO company files with any third party, except:</p>
+  <ul>
+    <li>To the QBO account owner who authorized the connection</li>
+    <li>To service providers under confidentiality obligations strictly necessary to operate the Application (e.g. cloud hosting providers)</li>
+    <li>As required by law, court order, or to protect the rights, property, or safety of My STR Books, its clients, or others</li>
+  </ul>
+
+  <h2>7. Your rights and choices</h2>
+  <p>If you are a QBO account owner who has authorized the Application, you may:</p>
+  <ul>
+    <li>Disconnect the Application from your QBO company file at any time via QBO's "Apps" management page</li>
+    <li>Request a copy of the data the Application has accessed from your account</li>
+    <li>Request deletion of stored data associated with your account</li>
+  </ul>
+  <p>To exercise any of these rights, contact us at the email address below.</p>
+
+  <h2>8. Changes to this policy</h2>
+  <p>We may update this Privacy Policy from time to time. The "Effective" date at the top of this page reflects the most recent revision. Material changes will be communicated to authorized account owners via the contact email associated with their QBO account.</p>
+
+  <h2>9. Contact</h2>
+  <p>For privacy-related questions or to exercise your rights, contact:</p>
+  <p>
+    My STR Books<br>
+    Email: <a href="mailto:opsadmin@mystrbooks.com">opsadmin@mystrbooks.com</a>
+  </p>
+
+  <p class="meta"><a href="./index.html">← Back</a></p>
+</body>
+</html>
